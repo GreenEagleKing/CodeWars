@@ -35,3 +35,22 @@ countSheep(5)
 
 // 8 kyu Find the smallest integer in the array
 
+class SmallestIntegerFinder {
+    findSmallestInt(args) {
+      return Math.min(...args)
+    }
+  }
+
+findSmallestInt()
+
+// 7 kyu Is this a triangle?
+
+function isTriangle(a,b,c) {
+   if (a + b <= c || b + c <= a || a + c <= b) {
+       return false
+   } else {
+       return true
+   }
+}
+
+isTriangle(1,2,2)
