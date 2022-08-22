@@ -29,12 +29,11 @@ correct("PAR1S") // Paris
 // use math of min to find smallest value
 
 function sumOfMinimums(arr) {
+   let minArr = 0 
    const eachArr = arr.forEach(e => {
-    let minArr = 0
-    minArr += Math.min(...e)
-    return minArr
+    return minArr += Math.min(...e)
    })
-   console.log(eachArr)
+   return minArr
   }
 
 sumOfMinimums([[7, 9, 8, 6, 2], [6, 3, 5, 4, 3], [5, 8, 7, 4, 5]])  // 9
